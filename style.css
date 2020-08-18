@@ -1,0 +1,92 @@
+:root
+{
+  --maincolor:#12343b;
+  --secondarycolor:#e1b382;
+
+  --bordreclor:#8a8282;
+  
+  --maintext:white;
+  --secondarytext:white;
+}
+
+
+html,body
+{
+  border: 0px;
+  margin: 0px;
+}
+
+h1, h2 ,h3 ,h4 ,h5 ,h6, strong
+{
+  color: var(--maintext);
+}
+
+h1{font-size: 52px; font-weight: 260;}
+
+p, li, textarea, label, input, span
+{
+  color: var(--secondarytext);
+}
+
+p{font-size: 25px;}
+
+.s1
+{
+  background-color: var(--maincolor);
+  border-bottom:1px solid var(--bordreclor);
+  overflow: auto;
+}
+
+.s2
+{
+  background-color: var(--secondarycolor);
+  border-bottom:1px solid var(--bordreclor);
+  overflow: auto;
+}
+
+.main-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+.heading-wrapper{
+  text-align: center;
+  align-content: center;
+  display: grid;
+  border: 2px dashed white;
+  height: 30em;
+  font-family: 'Russo One', sans-serif;
+  
+}
+
+img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 1px 5px 17px 16px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 5px 17px 16px rgba(0,0,0,0.75);
+  box-shadow: 1px 5px 17px 16px rgba(0,0,0,0.75);
+}
+
+.about-wrapper
+{
+  display: block;
+  margin-right: 17em;
+  margin-left: 17em;
+  display: grid;
+  border: 2px dashed white;
+  height: 30em;
+
+  font-family: 'Roboto Mono', monospace;
+}
+
+@media screen and (max-width:1200px){
+  .main-container{
+    width: 95%;
+  }
+}
+
