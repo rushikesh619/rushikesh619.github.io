@@ -160,10 +160,14 @@ p{font-size: 25px;}
   line-height: 2.7em;
 }
 
+#contact-form input{
+  color: black;
+}
+
 #contact-form textarea{
   min-height: 100px;
   font-size: 14px;
-
+  color: black;
 }
 
 .input-field
