@@ -55,6 +55,7 @@ p{font-size: 25px;}
   margin: 0 auto;
 }
 
+
 .navbar
 {
   overflow: hidden;
@@ -210,10 +211,9 @@ p{font-size: 25px;}
 
 
 
-@media screen and (max-width:481px){
+@media screen and (max-width:800px){
   .about-wrapper{
-    text-align: center;
-    font-size: 10px;   
+    text-align: center;   
   }
 }
 @media screen and (max-width:100px){
