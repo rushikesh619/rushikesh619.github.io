@@ -18,7 +18,7 @@ html,body
 
 body *
 {
-  transition: 1.0s;
+  transition: 0.75s;
 }
 
 h1, h2 ,h3 ,h4 ,h5 ,h6, strong
@@ -83,7 +83,7 @@ p{font-size: 25px;}
   text-align: center;
   align-content: center;
   display: grid;
-  
+  width: auto;
   height: 37em;
   font-family: 'Russo One', sans-serif;
   height: auto;
@@ -146,7 +146,7 @@ p{font-size: 25px;}
   margin-bottom: 50px;
   border-radius: 15px;
   background-color: grey;
-  border:1px dashed white;
+
 
  
 }
@@ -210,13 +210,15 @@ p{font-size: 25px;}
 
 
 
-@media screen and (max-width:800px){
+@media screen and (max-width:481px){
   .about-wrapper{
     justify-content: center;
+    width: 50%;
+    padding: 0%;
+    margin: 3%;
     
   }
 }
-
 @media screen and (max-width:1000px){
   .skills-wrapper{
     justify-content: center;
