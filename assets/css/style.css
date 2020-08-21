@@ -115,6 +115,7 @@ p{font-size: 25px;}
   margin-left: 18em;
   height: auto;
   text-align: center;
+  font-size: 1vw;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -201,7 +202,7 @@ p{font-size: 25px;}
 }
 
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  margin-top: 30px; 
 }
 
 
@@ -213,13 +214,10 @@ p{font-size: 25px;}
 
 
 
-@media screen and (max-width:481px){
+@media screen and (max-width:800px){
   .about-wrapper{
     justify-content: center;
-    width: 50%;
-    padding: 0%;
-    margin: 3%;
-    
+    width: 50%;    
   }
 }
 @media screen and (max-width:1000px){
