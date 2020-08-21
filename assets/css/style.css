@@ -220,7 +220,7 @@ p{font-size: 25px;}
     width: 50%;    
   }
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:1000px){
   .skills-wrapper{
     justify-content: center;
   }
