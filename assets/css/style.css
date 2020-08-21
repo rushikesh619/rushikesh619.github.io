@@ -84,7 +84,7 @@ p{font-size: 25px;}
   align-content: center;
   display: grid;
   width: auto;
-  height: 37em;
+  height: auto;
   font-family: 'Russo One', sans-serif;
 
   margin-top: 70px;
