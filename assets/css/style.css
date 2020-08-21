@@ -214,13 +214,13 @@ p{font-size: 25px;}
 
 
 
-@media screen and (max-width:100px){
+@media screen and (max-width:500px){
   .about-wrapper{
     justify-content: center;
     width: 50%;    
   }
 }
-@media screen and (max-width:100px){
+@media screen and (max-width:500px){
   .skills-wrapper{
     justify-content: center;
   }
