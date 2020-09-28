@@ -6,16 +6,31 @@
   <link rel="stylesheet" href="assets/css/all.css">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
 
   
-  <div class="navbar">
-    <a class="fas fa-3x fa-home" href="#home" ></a>
-    <a class="far fa-3x fa-user" href="#about"></a>
-    <a class="fab fa-3x fa-buromobelexperte" href="#experties"></a>
-    <a class="fas fa-3x fa-phone-alt" href="#contact"></a>
-  </div>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn"> 
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul>
+      <li>
+        <a class="fas fa-3x fa-home" href="#home" ></a>
+      </li>
+      <li>
+        <a class="far fa-3x fa-user" href="#about"></a>
+      </li>
+      <li>
+        <a class="fab fa-3x fa-buromobelexperte" href="#experties"></a>
+      </li>
+      <li>
+        <a class="fas fa-3x fa-phone-alt" href="#contact"></a>
+      </li>
+    </ul>
+  </nav>
 
 
   <section class="s1" id="home">
@@ -38,7 +53,7 @@
           . I create custom websites to help businesses do better online.
           I enjoy bilding everything from small business sites to rich interactive web apps. 
           If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
-          I have an diversed set of skills ranging from HTML+CSS+Javascript
+          I have an diversed set of skills ranging from HTML, CSS, Javascript
           all the way to noje.js, express, mongo .
         </p>
       </div>
@@ -104,7 +119,7 @@
       <p style="text-align:center ; color:black ;" >Contact </p>
       <div class="contact-form"> 
         
-        <form id="contact-form">
+        <form id="contact-form" action="rishikeshshinde619@gmail.com" method="post" enctype="text/plain">
           <label > Name </label>
           <input class="input-field" type="text" name="name">
           <label > Subject </label>
