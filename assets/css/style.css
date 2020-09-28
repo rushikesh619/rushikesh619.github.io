@@ -241,17 +241,21 @@ a.active,a:hover{
 }
 
 
-
-
-@media (max-width:1200px)
-{
+@media (max-width:1200px){
   .container{
     width: 50%;
   }
+}
 
+@media (max-width: 952px){
   nav ul li a{
     font-size: 16px;
   }
+}
+
+@media (max-width:800px)
+{
+  
   .checkbtn{
     display: block;
   }
