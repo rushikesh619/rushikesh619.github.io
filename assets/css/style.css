@@ -280,6 +280,7 @@ a.active,a:hover{
     border-style: dashed;
   }
 
+ 
   a:hover, a.active{
     background: none;
     color: #0082e6;
