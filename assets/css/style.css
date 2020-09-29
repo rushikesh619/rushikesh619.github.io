@@ -146,37 +146,27 @@ a.active,a:hover{
   box-shadow: 1px 5px 17px 16px rgba(0,0,0,0.75);
 }
 
+
+
 .about-wrapper
 {
   display: block;
   margin-right: 13em;
   margin-left: 13em;
   height: auto;
-  text-align: center;
   font-family: 'Roboto Mono', monospace;
 }
 
 .skills-wrapper
 {
   display: grid;
-  padding: 10px;
+  padding: 5%;
   text-align: center;
-  margin-right: 10em;
-  margin-left: 10em;
+
   grid-template-columns: 1fr 1fr 1fr;
-  font-family: 'Roboto Mono', monospace;
   height: auto;
   font-family: montserrat;
 
-  <a href="https://icons8.com/icon/40670/c-programming">C Programming icon by Icons8</a>
-  <a href="https://icons8.com/icon/40669/c++">C++ icon by Icons8</a>
-  <a href="https://icons8.com/icon/12239/html">HTML icon by Icons8</a>
-  <a href="https://icons8.com/icon/11935/css">CSS icon by Icons8</a>
-  <a href="https://icons8.com/icon/108784/javascript">JavaScript icon by Icons8</a>
-  <a href="https://icons8.com/icon/t9oCxEN7McHZ/nodejs">Nodejs icon by Icons8</a>
-  <a href="https://icons8.com/icon/24895/npm">NPM icon by Icons8</a>
-  <a href="https://icons8.com/icon/74402/mongodb">MongoDB icon by Icons8</a>
-  
 }
 
 #contact-form
@@ -241,21 +231,12 @@ a.active,a:hover{
 }
 
 
-@media (max-width:1200px){
+@media (max-width: 600px) 
+{
+  
   .container{
     min-width: 50%;
   }
-}
-
-@media (max-width: 952px){
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 600px) 
-{
-  
   .checkbtn{
     display: block;
   }
@@ -264,20 +245,20 @@ a.active,a:hover{
     width: 100%;
     height: 100vh;
     background: #2c3e50;
-    margin-top: 13%;
+    margin-top: 18%;
     left: -200%;
     text-align: center;
     transition: all 0.5%;
- 
+    
   }
   ul li{
     display:block;
-
+    word-spacing: 2px;
   }
 
   ul li a{
-    font-size: 20px;
-    border-style: dashed;
+  
+    border-style: solid;
   }
 
  
