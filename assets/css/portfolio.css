@@ -133,6 +133,27 @@ span {
   font-family: var(--linksFont);
 }
 
+.resumeLink {
+  margin: .5rem;
+  min-width: 12rem;
+  background-color: var(--buttonPrimaryColor);
+  border-color: #343a40;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+}
+
+.aboutWrapper a:hover {
+  border-bottom: none;
+  background-color: var(--buttonSecondaryColor)
+}
+
 .aboutPara {
   margin: 20px 0px 0px;
   max-width: 560px;
