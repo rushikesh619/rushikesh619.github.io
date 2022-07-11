@@ -1,159 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WPWWRLFB8E"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-212910358-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
 
-  gtag('config', 'UA-212910358-2');
-</script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <script>
+        function openExperience(idToOpen, idFirstToClose, idTwoForCLose) {
+            console.log("idToOpen: ", idToOpen, "idFirstToClose: ", idFirstToClose, "idTwoForCLose: ", idTwoForCLose)
+            console.log(typeof idToOpen);
+            document.getElementById(idToOpen).style.display = "block"
+
+            document.getElementById(idFirstToClose).style.display = "none"
+
+            document.getElementById(idTwoForCLose).style.display = "none"
+        }
+    </script>
+
+    <title>Rushikesh Shinde </title>
 </head>
 
 <body>
-  
-   <nav>
-    <input type="checkbox" id="check">
-    <label for="check" class="checkbtn"> 
-      <i class="fas fa-bars"></i>
-    </label>
-    <ul>
-      <li>
-        <a href="#home" >HOME</a>
-      </li>
-      <li>
-        <a href="#about">ABOUT</a>
-      </li>
-      <li>
-        <a href="#experties">EXPERTIES</a>
-      </li>
-      <li>
-        <a href="#contact">CONTACT</a>
-      </li>
-    </ul>
-  </nav>
-
-
-  <section class="s1" id="home">
-    <div class="contaner">
-      <div class="heading-wrapper">
-      <h1>Rushikesh Shinde</h1>
-      <img src="assets/images/IMG_0084-002.JPG" alt="profilpic">
-
-  </section>
-  
-
-  <section class="s2" id="about">
-    <div class="contaner">
-      <div class="about-wrapper">
-        <h2 style="text-align: center;">About Me</h2>
-        <p>
-          Hello! my name is Rushikesh shinde, and I'am
-          an India Based Freelancer. I have an interest
-          in working remotely for clients all over the world
-          . I create custom websites to help businesses do better online.
-          I enjoy bilding everything from small business sites to rich interactive web apps. 
-          If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
-          I have an diversed set of skills ranging from HTML, CSS, Javascript
-          all the way to noje.js, express, mongo .
-        </p>
-      </div>
-   </div>
-  </section>
-
-  <section class="s1" id="experties">
-    <div class="contaner">
-      <p style="text-align: center;"> Experties </p>
-      <div class="skills-wrapper">
-        
-        <div class="c-wrapper">
-          <img src="https://img.icons8.com/color/96/000000/c-programming.png"/>
-          <p>C</p>
+    <div class="navbar">
+        <div class="container flex">
+            <h2>"rushikesh_shinde"</h2>
+            <nav>
+                <ul>
+                    <li><a href="#about">01.About</a></li>
+                    <li><a href="#experience">02.Experience</a></li>
+                    <li><a href="#projects">03.Projects</a></li>
+                    <li><a href="#skillsets">04.Skillsets</a></li>
+                    <li><a href="#connect">05.Connect</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <div class="cpp-wrapper"> 
-          <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png"/>
-          <p>C++</p>
-        </div>
-
-        <div class="html-wrapper">
-          <img src="https://img.icons8.com/color/96/000000/html.png"/>
-          <p>HTML</p>
-        </div>
-
-        <div class="css-wrapper">
-          <img src="https://img.icons8.com/color/96/000000/css.png"/>
-          <p>CSS</p>
-        </div>
-
-        <div class="java-wrapper">
-          <img src="https://img.icons8.com/color/96/000000/javascript.png"/>
-          <p>Java Script</p>
-        </div>
-        
-        <div class="node-wrapper" >
-          <img src="https://img.icons8.com/windows/96/000000/nodejs.png"/>
-          <p>Node.js</p>
-        </div>
-        
-        <div class="npm-wrapper">
-          <img src="https://img.icons8.com/color/96/000000/npm.png"/>
-          <p>npm</p>
-        </div>
-        
-        <div class="express-wrapper">
-          <img src="assets/images/imgserver.jpg"/>
-          <p>Express</p>
-        </div>
-
-        <div class="mongo-wrapper">
-          <img src="https://img.icons8.com/color/96/000000/mongodb.png"/>
-          <p>Mongodb</p>
-        </div>
-
-      </div>
-    </div>  
-  </section>
-  
-  <section class="s2" id="contact">
-    <div class="contaner">
-      <p style="text-align: center;"> CONTACT </p>
-      <div class="contact-wrapper">
-        <div class="item">
-          <i class="fas fa-3x fa-phone-alt"></i> 
-          <a href="tel:+917262099383"> +917262099383 </a>
-        </div>
-
-        <div class="item">
-          
-          <i class="fas fa-3x fa-envelope"></i>
-          <a href="mailto:rishikeshshinde619@gmail.com">rishikeshshinde619</a>
-        </div>
-
-        <div class="item">
-          <i class="fab fa-3x fa-linkedin-in"></i>
-          <a href="https://in.linkedin.com/in/rushikeshshinde619?trk=people-guest_people_search-card">linkedin</a>
-        </div>
-
-        <div class="item">
-          <i class="fab fa-3x fa-github"></i>
-          <a href="https://github.com/rushikesh619">Github</a>
-        </div>
-      </div>
-      
     </div>
-  </section>
+
+    <div class="aboutWrapper" id="about">
+        <div class="container">
+            <h4>Hi, my name is</h4>
+            <h1>Rushikesh shinde</h1>
+            <h2>I build things for the web.</h2>
+            <div class="aboutPara">
+                <p>
+                    I’m a software Developer specializing in building web apps having
+                    an interest in working remotely for clients all over the world.
+                    I create custom websites to help businesses do better online.
+                    I enjoy bilding everything from small business sites to rich interactive
+                    web apps. If you are a business seeking a web presence or an employer
+                    looking to hire, you can get in touch with me here. I have an diversed set
+                    of skills ranging from HTML, CSS, Javascript all the way to noje.js, express, mongo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="experienceWrapper" id="experience">
+        <div class="container">
+            <h1>Where I've Worked</h1>
+            <div class="flex">
+                <div class="btnGroup">
+                    <button onclick="openExperience('iprogrammerExperience', 'techHutExperience', 'raftLabsExperience')">iProgrammer</button>
+                    <button onclick="openExperience('raftLabsExperience', 'techHutExperience', 'iprogrammerExperience')">RaftLabs</button>
+                    <button onclick="openExperience('techHutExperience', 'iprogrammerExperience', 'raftLabsExperience')">TechHut</button>
+                </div>
+                <div class="experienceInfo">
+                    <div class="techHut" id="techHutExperience">
+                        <h3>Full Stack Developer Intern @ <a href="https://www.linkedin.com/company/techhutpune/?originalSubdomain=in">TechHut</a></h3>
+                        <p>Nov 2020 - Jun 2021 · 8 mos</p>
+                        <ul>
+                            <li>Developed and maintained code primarily using HTML, CSS, JavaScript, NodeJS, ExpressJS</li>
+                            <li>Responsible for development of web based appointment application with HTML, CSS, ReactJS, Git. This
+                                application helps businesses to handle their customers more efficiently.</li>
+                        </ul>
+                    </div>
+    
+                    <div class="raftLabs" id="raftLabsExperience">
+                        <h3>Software Developer Intern @ <a href="https://www.raftlabs.co/">RaftLabs</a></h3>
+                        <p>Aug 2021 - Nov 2021 · 4 mos</p>
+                        <ul>
+                            <li>Built Instantor, a web based reward application using NextJS, GraphQL, React, Git. This application helps users to
+                                take part in Instantor Competitions and update them regularly about it's Competitions.</li>
+                        </ul>
+                    </div>
+    
+                    <div class="iprogrammer" id="iprogrammerExperience">
+                        <h3>Associate Software Engineer @ <a href="https://www.iprogrammer.com/">iProgrammer Solutions</a></h3>
+                        <p>Nov 2021 - Present · 9 mos</p>
+                        <ul>
+                            <li>Building Utec web based application through which Ultratech can provide all their services and sell their products
+                                with just few clicks.</li>
+                            <li>Worked on backend technologies like NodeJS, Express, MySQL and responsible for creating rest api's</li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projectsWrapper" id="projects">
+        <div class="container">
+            <h1>Some Things I've Built</h1>
+
+            <div class="flex">
+                <img src="assets/images/apcensys-1.JPG" alt="thumbnail">
+                <div class="projectInfo">
+                    <h3>Apcensys Equity Research Website</h3>
+                    <p>Planned, designed and built the complete technology for the Apcensys web based platform from scratch. Apcensys is an emerging startup soon to enter in the fintech space with its expertise in equity research.</p>
+                    <span class="badge">React</span>
+                    <span class="badge">NodeJS</span>
+                    <span class="badge">ExpressJS</span>
+                    <span class="badge">Google Auth</span>
+                    <span class="badge">Mongodb</span>
+                </div>
+            </div>
+            
+            <div class="flex">
+                <img src="assets/images/fluentUIAuth-1.png" alt="thumbnail">
+                <div class="projectInfo">
+                    <h3>Instagram clone app</h3>
+                    <p>Created npm package which will create nx plugin Boilerplate which contains Firebase authentication logic and some pages
+                        created using FluentUI library.</p>
+                    <span class="badge">React</span>
+                    <span class="badge">NextJS</span>
+                    <span class="badge">Nx</span>
+                    <span class="badge">Firebase</span>
+                </div>
+            </div>
+
+            <div class="flex">
+                <img src="assets/images/instaCloneApp-1.png" alt="thumbnail">
+                <div class="projectInfo">
+                    <h3>Instagram clone app</h3>
+                    <p>Build web based Instagram clone app with authentication, post upload, comment on posts and like to post functionality</p>
+                    <span class="badge">React</span>
+                    <span class="badge">NodeJS</span>
+                    <span class="badge">ExpressJS</span>
+                    <span class="badge">Mongodb</span>
+                </div>
+            </div>
+
+            <div class="flex">
+                <img src="assets/images/relationshipApp-1.png" alt="thumbnail">
+                <div class="projectInfo">
+                    <h3>Relationship app</h3>
+                    <p>Build web based Instagram clone app with authentication, post upload, comment on posts and like to post functionality</p>
+                    <span class="badge">React</span>
+                    <span class="badge">NodeJS</span>
+                    <span class="badge">ExpressJS</span>
+                    <span class="badge">Mongodb</span>
+                </div>
+            </div>
+
+            <div class="flex">
+                <img src="assets/images/reactToDoApp-1.png" alt="thumbnail">
+                <div class="projectInfo">
+                    <h3>Instagram clone app</h3>
+                    <p>Build web based Instagram clone app with authentication, post upload, comment on posts and like to post functionality</p>
+                    <span class="badge">React</span>
+                    <span class="badge">NodeJS</span>
+                    <span class="badge">ExpressJS</span>
+                    <span class="badge">Mongodb</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="skillsetsWrapper" id="skillsets">
+        <div class="container">
+            <h1>Skillsets</h1>
+
+            <div class="skillList">
+                <h2>Languages</h2>
+                <div class="flex">
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="">
+                        <p>JavaScript</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/48/000000/typescript.png" alt=""/>
+                        <p>TypeScript</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/96/000000/c-programming.png" alt="">
+                        <p>C</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" alt="">
+                        <p>C++</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/96/000000/html.png" alt="">
+                        <p>HTML</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/96/000000/css.png" alt="">
+                        <p>CSS</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/nolan/64/sql.png" alt=""/>
+                        <p>SQL</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="skillList">
+                <h2>Frontend</h2>
+                <div class="flex">
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/office/80/000000/react.png" alt="">
+                        <p>ReactJS</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="skillList">
+                <h2>Backend</h2>
+                <div class="flex">
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/240/000000/nodejs.png" alt="">
+                        <p>NodeJS</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="skillList">
+                <h2>Platforms and Tools</h2>
+                <div class="flex">
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/240/000000/npm.png" alt="">
+                        <p>npm</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/480/000000/git.png" alt="">
+                        <p>git</p>
+                    </div>
+                    
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/480/000000/salesforce.png" alt="">
+                        <p>Salesforce</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="skillList">
+                <h2>Databases</h2>
+                <div class="flex">
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/fluency/240/000000/mysql-logo.png" alt="">
+                        <p>MySQL</p>
+                    </div>
+
+                    <div class="skillsIcon">
+                        <img src="https://img.icons8.com/color/480/000000/mongodb.png" alt="">
+                        <p>MongoDB</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="connectWrapper" id="connect">
+        <div class="container">
+            <h1>Connect</h1>
+            <div class="flex">
+
+                <div class="connectIcon">
+                    <img src="https://img.icons8.com/material-outlined/96/000000/phone.png" alt="">
+                    <a href="tel:+917249556692">+917249556692</a>
+                </div>
+
+                <div class="connectIcon">
+                    <img src="https://img.icons8.com/material-outlined/192/000000/github.png" alt="">
+                    <a href="https://github.com/rushikesh619">Github</a>
+                </div>
+
+                <div class="connectIcon">
+                    <img src="https://img.icons8.com/material-outlined/96/000000/mail.png" alt="">
+                    <a href="mailto:rishikeshshinde619@gmail.com">rishikeshshinde619</a>
+                </div>
+
+                <div class="connectIcon">
+                    <img src="https://img.icons8.com/material-outlined/192/000000/linkedin--v1.png" alt="">
+                    <a href="https://in.linkedin.com/in/rushikeshshinde619?trk=people-guest_people_search-card">linkedin</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
