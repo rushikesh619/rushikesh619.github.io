@@ -478,10 +478,6 @@ i {
   .menuWrapper {
     visibility: visible;
   }
-  
-  .aboutWrapper {
-    border: 5px solid #FFFF00;
-  }
 
   .aboutWrapper .container {
     display: flex;
