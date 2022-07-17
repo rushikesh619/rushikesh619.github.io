@@ -10,6 +10,8 @@
   --primarytext: #e71313;
   --hoverColor: #e71313;
 
+  --iconColor: #ccd6f6;
+
   --headingFont: 'Russo One', sans-serif;
   --linksFont: 'Courier Prime', monospace;
   --secondaryFont: 'Roboto Mono', monospace;
@@ -52,7 +54,7 @@ li {
 h1 {
   font-family: var(--paragraphFont);
   color: var(--maintext);
-  margin: 5px 0;
+  margin: 2% 0;
 }
 
 h2, h3 {
@@ -64,15 +66,22 @@ h2, h3 {
 p {
   color: var(--secondarytext);
   font-family: var(--paragraphFont);
+  font-size: clamp(5%, 1rem, 90%);
 }
 
 span {
+  display: inline-block;
   background-color: var(--buttonPrimaryColor);
   color: var(--primarytext);
   font-weight: bold;
   padding: 4px 8px;
   text-align: center;
   border-radius: 5px;
+}
+
+i {
+  color: var(--iconColor);
+  margin-bottom: 5%;
 }
 
 .navbar {
@@ -106,46 +115,175 @@ span {
   max-width: 90%;
 }
 
-/* .navbar a:hover {
-  border-bottom: #e3e5e7 solid;
-} */
+.menuWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.menuWrapper .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menuWrapper .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 3rem;
+  width: 3rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuWrapper .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: var(--maintext);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menuWrapper .hamburger > div:before,
+.menuWrapper .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.menuWrapper .hamburger > div:after {
+  top: 10px;
+}
+
+.menuWrapper .toggle:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.menuWrapper .toggle:checked + .hamburger > div:before,
+.menuWrapper .toggle:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menuWrapper .toggle:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+.menuWrapper .toggle:not(:checked) ~ .menu {
+  visibility: hidden;
+}
+
+.menuWrapper .toggle:not(:checked) ~ .menu > div {
+  transform: scale(0);
+  transition-duration: 0.75s;
+}
+
+.menuWrapper .toggle:not(:checked) ~ .menu > div > div {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menuWrapper .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+
+.menuWrapper .menu > div {
+  background: black;
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuWrapper .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menuWrapper .menu > div > div > ul > li {
+  font-size: clamp(1vh, 1.5rem, 5vw);;
+  padding: 1rem;
+}
 
 .aboutWrapper {
   min-height: 100%;
   padding: 10% 0;
 }
 
+.aboutWrapper .container {
+  justify-content: left;
+}
+
 .aboutWrapper h1 {
   color: var(--maintext);
   font-family: var(--headingFont);
+  white-space: nowrap;
   font-size: 70px;
+  font-size: clamp(3vh, 5rem, 8vw);
 }
 
 .aboutWrapper h2 {
   color: var(--secondarytext);
   font-family: var(--headingFont);
   font-size: 70px;
+  font-size: clamp(3vh, 4.3rem, 8vw);
+  /* white-space: nowrap; */
 }
 
 .aboutWrapper h4 {
   margin: 2% 0% 0% 0%;
   color: var(--primarytext);
   font-family: var(--linksFont);
+  font-size: clamp(0.2vh, 1rem, 4vw);
 }
 
 .resumeLink {
-  
-  margin: .5rem;
-  min-width: 12rem;
+  margin: 3%;
+  min-width: 3%;
   background-color: var(--buttonPrimaryColor);
   border-color: #343a40;
   display: inline-block;
-  font-weight: 400;
+  font-weight: bold;
   text-align: center;
   vertical-align: middle;
   user-select: none;
   padding: .375rem .75rem;
-  font-size: 1rem;
+  font-size: clamp(0.7vh, 1rem, 4vw);
   line-height: 1.5;
   border-radius: .25rem;
 
@@ -216,7 +354,7 @@ span {
 }
 
 .techHut {
-  display: block;
+  display: none;
 }
 
 .raftLabs {
@@ -224,7 +362,7 @@ span {
 }
 
 .iprogrammer {
-  display: none;
+  display: block;
 }
 
 .projectsWrapper {
@@ -247,6 +385,10 @@ span {
 
 .projectsWrapper p {
   margin-bottom: 5%;
+}
+
+.projectsWrapper span{
+  margin: 5px 5px;
 }
 
 .projectInfo {
@@ -293,9 +435,11 @@ span {
   justify-content: space-between;
 }
 
-.connectWrapper img {
+.connectWrapper i {
   display:block;
-  margin:auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 3rem;
   width: 3rem;
 }
@@ -327,5 +471,66 @@ span {
 }
 
 @media (max-width: 1000px){
+  .navbar {
+    display: none;
+  }
+
+  .menuWrapper {
+    visibility: visible;
+  }
   
+  .aboutWrapper {
+    border: 5px solid #FFFF00;
+  }
+
+  .aboutWrapper .container {
+    display: flex;
+    flex-direction: column;
+    padding: 30% 0;
+  }
+
+  .experienceWrapper .btnGroup {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .experienceWrapper .experienceInfo {
+    text-align: left;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .experienceWrapper .flex {
+    display: block;
+  }
+
+  .projectsWrapper .flex {
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .skillsetsWrapper .flex {
+    flex-flow: none;
+    justify-content: center;
+  }
+
+  .connectWrapper .flex {
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .connectIcon:nth-child(1n) {
+    page-break-after: avoid;
+    break-after: avoid; 
+  }
+
+  /* .flex {
+    flex-direction:column;
+    align-items: center;
+  }  */
 }

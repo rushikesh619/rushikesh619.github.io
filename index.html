@@ -12,17 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/205653cac6.js" crossorigin="anonymous"></script>
 
     <script>
         function openExperience(idToOpen, idFirstToClose, idTwoForCLose) {
-            console.log("idToOpen: ", idToOpen, "idFirstToClose: ", idFirstToClose, "idTwoForCLose: ", idTwoForCLose)
-            console.log(typeof idToOpen);
-            document.getElementById(idToOpen).style.display = "block"
+            document.getElementById(idToOpen).style.cssText = 'display: block';
 
-            document.getElementById(idFirstToClose).style.display = "none"
+            document.getElementById(idFirstToClose).style.cssText = 'display: none';
 
-            document.getElementById(idTwoForCLose).style.display = "none"
+            document.getElementById(idTwoForCLose).style.cssText = 'display: none';
         }
     </script>
 
@@ -35,13 +33,31 @@
             <h2>"rushikesh_shinde"</h2>
             <nav>
                 <ul>
-                    <li><a href="#about">01.About</a></li>
-                    <li><a href="#experience">02.Experience</a></li>
-                    <li><a href="#projects">03.Projects</a></li>
-                    <li><a href="#skillsets">04.Skillsets</a></li>
-                    <li><a href="#connect">05.Connect</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skillsets">Skillsets</a></li>
+                    <li><a href="#connect">Connect</a></li>
                 </ul>
             </nav>
+        </div>
+    </div>
+
+    <div class="menuWrapper">
+        <input type="checkbox" class="toggle">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skillsets">Skillsets</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -298,22 +314,22 @@
             <div class="flex">
 
                 <div class="connectIcon">
-                    <img src="https://img.icons8.com/material-outlined/96/000000/phone.png" alt="">
+                    <i class="fas fa-3x fa-phone-alt"></i> 
                     <a href="tel:+917249556692">+917249556692</a>
                 </div>
 
                 <div class="connectIcon">
-                    <img src="https://img.icons8.com/material-outlined/192/000000/github.png" alt="">
+                    <i class="fa fa-3x fa-github"></i>
                     <a href="https://github.com/rushikesh619">Github</a>
                 </div>
 
                 <div class="connectIcon">
-                    <img src="https://img.icons8.com/material-outlined/96/000000/mail.png" alt="">
+                    <i class="fa fa-3x fa-envelope"></i>
                     <a href="mailto:rishikeshshinde619@gmail.com">rishikeshshinde619</a>
                 </div>
 
                 <div class="connectIcon">
-                    <img src="https://img.icons8.com/material-outlined/192/000000/linkedin--v1.png" alt="">
+                    <i class="fa fa-3x fa-linkedin"></i>
                     <a href="https://in.linkedin.com/in/rushikeshshinde619?trk=people-guest_people_search-card">linkedin</a>
                 </div>
             </div>
