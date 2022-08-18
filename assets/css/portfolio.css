@@ -431,8 +431,7 @@ i {
 }
 
 .connectWrapper .flex {
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .connectWrapper i {
@@ -445,17 +444,17 @@ i {
 }
 
 .connectIcon {
-  
+  flex: 50%;
   padding: 8%;
   text-align: center;
   align-items: center;
   justify-content: space-between;
 }
 
-.connectIcon:nth-child(2n) {
+/* .connectIcon:nth-child(2n) {
   page-break-after: always;
   break-after: always; 
-}
+} */
 
 .container {
   max-width: 80%;
@@ -483,6 +482,10 @@ i {
     display: flex;
     flex-direction: column;
     padding: 30% 0;
+  }
+
+  .aboutPara {
+    margin: auto;
   }
 
   .experienceWrapper .btnGroup {
