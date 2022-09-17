@@ -7,32 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- bootstrap -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0-beta1/js/bootstrap.min.js" integrity="sha512-Hqe3s+yLpqaBbXM6VA0cnj/T56ii5YjNrMT9v+us11Q81L0wzUG0jEMNECtugqNu2Uq5MSttCg0p4KK0kCPVaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/205653cac6.js" crossorigin="anonymous"></script>
 
-    <script>
-        function openExperience(idToOpen, idFirstToClose, idTwoForCLose) {
-            document.getElementById(idToOpen).style.cssText = 'display: block';
-
-            document.getElementById(idFirstToClose).style.cssText = 'display: none';
-
-            document.getElementById(idTwoForCLose).style.cssText = 'display: none';
-        };
-        function closeMenu() {
-            console.log("inside closeMenu");
-            document.getElementById("menuToggle").checked = false;
-        }
-    </script>
+    <script defer src="/assets/js/app.js"> </script>
 
     <title>Rushikesh Shinde </title>
 </head>
 
 <body>
-    <div class="navbar">
+
+    <div id="loader">
+        <h1>"rushikesh_shinde"</h1>
+    </div>
+
+    <div class="navbar" id="navBar">
         <div class="container flex">
             <h2>"rushikesh_shinde"</h2>
             <nav>
@@ -88,7 +81,7 @@
     <div class="experienceWrapper" id="experience">
         <div class="container">
             <h1>Where I've Worked</h1>
-            <div class="flex">
+            <div class="flex hidden">
                 <div class="btnGroup">
                     <button onclick="openExperience('iprogrammerExperience', 'techHutExperience', 'raftLabsExperience')">iProgrammer</button>
                     <button onclick="openExperience('raftLabsExperience', 'techHutExperience', 'iprogrammerExperience')">RaftLabs</button>
@@ -134,7 +127,7 @@
             <h1>Some Things I've Built</h1>
 
             <div class="flex">
-                <img src="assets/images/apcensys-1.JPG" alt="thumbnail">
+                <img class="hidden" src="assets/images/apcensys-1.JPG" alt="thumbnail">
                 <div class="projectInfo">
                     <h3>Apcensys Equity Research Website</h3>
                     <p>Planned, designed and built the complete technology for the Apcensys web based platform from scratch. Apcensys is an emerging startup soon to enter in the fintech space with its expertise in equity research.</p>
@@ -147,7 +140,7 @@
             </div>
             
             <div class="flex">
-                <img src="assets/images/fluentUIAuth-1.png" alt="thumbnail">
+                <img class="hidden" src="assets/images/fluentUIAuth-1.png" alt="thumbnail">
                 <div class="projectInfo">
                     <h3>Instagram clone app</h3>
                     <p>Created npm package which will create nx plugin Boilerplate which contains Firebase authentication logic and some pages
@@ -160,7 +153,7 @@
             </div>
 
             <div class="flex">
-                <img src="assets/images/instaCloneApp-1.png" alt="thumbnail">
+                <img class="hidden" src="assets/images/instaCloneApp-1.png" alt="thumbnail">
                 <div class="projectInfo">
                     <h3>Instagram clone app</h3>
                     <p>Build web based Instagram clone app with authentication, post upload, comment on posts and like to post functionality</p>
@@ -172,7 +165,7 @@
             </div>
 
             <div class="flex">
-                <img src="assets/images/relationshipApp-1.png" alt="thumbnail">
+                <img class="hidden" src="assets/images/relationshipApp-1.png" alt="thumbnail">
                 <div class="projectInfo">
                     <h3>Relationship app</h3>
                     <p>Build web based Instagram clone app with authentication, post upload, comment on posts and like to post functionality</p>
@@ -184,7 +177,7 @@
             </div>
 
             <div class="flex">
-                <img src="assets/images/reactToDoApp-1.png" alt="thumbnail">
+                <img class="hidden" src="assets/images/reactToDoApp-1.png" alt="thumbnail">
                 <div class="projectInfo">
                     <h3>Instagram clone app</h3>
                     <p>Build web based Instagram clone app with authentication, post upload, comment on posts and like to post functionality</p>
@@ -204,7 +197,7 @@
 
             <div class="skillList">
                 <h2>Languages</h2>
-                <div class="flex">
+                <div class="flex hidden">
 
                     <div class="skillsIcon">
                         <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="">
@@ -246,7 +239,7 @@
 
             <div class="skillList">
                 <h2>Frontend</h2>
-                <div class="flex">
+                <div class="flex hidden">
 
                     <div class="skillsIcon">
                         <img src="https://img.icons8.com/office/80/000000/react.png" alt="">
@@ -258,7 +251,7 @@
 
             <div class="skillList">
                 <h2>Backend</h2>
-                <div class="flex">
+                <div class="flex hidden">
 
                     <div class="skillsIcon">
                         <img src="https://img.icons8.com/color/240/000000/nodejs.png" alt="">
@@ -270,7 +263,7 @@
 
             <div class="skillList">
                 <h2>Platforms and Tools</h2>
-                <div class="flex">
+                <div class="flex hidden">
 
                     <div class="skillsIcon">
                         <img src="https://img.icons8.com/color/240/000000/npm.png" alt="">
@@ -293,7 +286,7 @@
 
             <div class="skillList">
                 <h2>Databases</h2>
-                <div class="flex">
+                <div class="flex hidden">
 
                     <div class="skillsIcon">
                         <img src="https://img.icons8.com/fluency/240/000000/mysql-logo.png" alt="">
@@ -317,29 +310,28 @@
             <h1>Connect</h1>
             <div class="flex">
 
-                <div class="connectIcon">
+                <div class="connectIcon hidden">
                     <i class="fas fa-3x fa-phone-alt"></i> 
                     <a href="tel:+917249556692">+917249556692</a>
                 </div>
 
-                <div class="connectIcon">
+                <div class="connectIcon hidden">
                     <i class="fa fa-3x fa-github"></i>
                     <a href="https://github.com/rushikesh619">Github</a>
                 </div>
 
-                <div class="connectIcon">
+                <div class="connectIcon hidden">
                     <i class="fa fa-3x fa-envelope"></i>
                     <a href="mailto:rishikeshshinde619@gmail.com">rishikeshshinde619</a>
                 </div>
 
-                <div class="connectIcon">
+                <div class="connectIcon hidden">
                     <i class="fa fa-3x fa-linkedin"></i>
                     <a href="https://in.linkedin.com/in/rushikeshshinde619?trk=people-guest_people_search-card">linkedin</a>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
