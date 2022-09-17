@@ -1,10 +1,15 @@
 let prevScrollpos = window.pageYOffset;
 let loader = document.getElementById("loader");
 
-window.addEventListener("load", function() {
-    loader.style.display = "none";
-})
+// window.addEventListener("load", function() {
+//     loader.style.display = "none";
+// })
 
+function hideLoader() {
+    loader.style.display = "none";
+}
+
+setTimeout(hideLoader, 4000);
 
 window.onscroll = function() {
 let currentScrollPos = window.pageYOffset;
