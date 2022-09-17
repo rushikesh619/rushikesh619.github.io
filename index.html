@@ -21,6 +21,10 @@
             document.getElementById(idFirstToClose).style.cssText = 'display: none';
 
             document.getElementById(idTwoForCLose).style.cssText = 'display: none';
+        };
+        function closeMenu() {
+            console.log("inside closeMenu");
+            document.getElementById("menuToggle").checked = false;
         }
     </script>
 
@@ -44,17 +48,17 @@
     </div>
 
     <div class="menuWrapper">
-        <input type="checkbox" class="toggle">
+        <input type="checkbox" class="toggle" id="menuToggle">
         <div class="hamburger"><div></div></div>
         <div class="menu">
             <div>
                 <div>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skillsets">Skillsets</a></li>
-                        <li><a href="#connect">Connect</a></li>
+                        <li><a href="#about" onclick="closeMenu()">About</a></li>
+                        <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+                        <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+                        <li><a href="#skillsets" onclick="closeMenu()">Skillsets</a></li>
+                        <li><a href="#connect" onclick="closeMenu()">Connect</a></li>
                     </ul>
                 </div>
             </div>
@@ -71,10 +75,10 @@
                     I’m a software Developer specializing in building web apps having
                     an interest in working remotely for clients all over the world.
                     I create custom websites to help businesses do better online.
-                    I enjoy bilding everything from small business sites to rich interactive
+                    I enjoy building everything from small business sites to rich interactive
                     web apps. If you are a business seeking a web presence or an employer
-                    looking to hire, you can get in touch with me here. I have an diversed set
-                    of skills ranging from HTML, CSS, Javascript all the way to noje.js, express, mongo.
+                    looking to hire, you can get in touch with me here. I have a diversed set
+                    of skills ranging from HTML, CSS, Javascript all the way to node.js, Express, Mongo.
                 </p>
             </div>
             <a class="resumeLink" href="https://rushikesh619.github.io/resume_rushikesh.pdf">Download Resume</a>
