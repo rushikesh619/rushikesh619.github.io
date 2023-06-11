@@ -580,10 +580,10 @@ i {
     display: block;
   }
 
-  /* .projectsWrapper .flex {
+  .projectsWrapper .flex {
     flex-direction:column;
     align-items: center;
-  } */
+  }
 
   .skillsetsWrapper .flex {
     flex-flow: none;
