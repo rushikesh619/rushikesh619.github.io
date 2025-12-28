@@ -346,6 +346,8 @@ i {
 .experienceWrapper .flex {
   align-items: flex-start;
   margin: 5% 0%;
+  justify-content: start;
+  align-items: start;
 }
 
 .experienceWrapper button {
